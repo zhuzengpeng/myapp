@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入SESSIONID"
+            android:id="@+id/editText" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="调用refreshSession接口(握手)"
+            android:id="@+id/button_query"
+            android:layout_gravity="center_horizontal" />
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"></Space>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="调用普通接口"
+            android:id="@+id/button_test"
+            android:layout_gravity="center_horizontal" />
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"></Space>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳至登陆界面"
+            android:id="@+id/button_gologin"
+            android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
