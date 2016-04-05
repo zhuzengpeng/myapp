@@ -76,7 +76,7 @@ public class OkHttpUtils {
         String paramsJson = JSON.toJSONString(params);
         Request.Builder builder = new Request.Builder().url(url);
         //构造请求头
-        builder.addHeader("Cookie", "SESSION=" + SessionConstant.sessionid);
+        builder.addHeader(SessionConstant.HEADERNAME_X_AUTH_TOKEN, SessionConstant.sessionid);
         //构造请求体
         //参数需要AES加密
         byte[] paramsEncry = AESHelper.encrypt(paramsJson, SessionConstant.aeskey);

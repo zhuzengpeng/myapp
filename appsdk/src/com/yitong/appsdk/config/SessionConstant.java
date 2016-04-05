@@ -25,6 +25,8 @@ public class SessionConstant {
     //登陆失败标识
     public static final String LOGIN_FLAG_NO = "0";
 
+    //spring session请求头和响应头都通过此变量传递SESSIONID
+    public static final String HEADERNAME_X_AUTH_TOKEN = "x-auth-token";
 
 
 
